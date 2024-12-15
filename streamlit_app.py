@@ -1,12 +1,12 @@
 import streamlit as st
 import pandas as pd
-import psycopg2
+import pg8000
 
 # Function to connect to the PostgreSQL database
 @st.cache_resource
 def get_db_connection():
     try:
-        conn = psycopg2.connect(
+        conn = pg8000.connect(
             host="database-1.c5qcwckke9ox.ap-south-1.rds.amazonaws.com",
             port=5432,
             database="postgres",
