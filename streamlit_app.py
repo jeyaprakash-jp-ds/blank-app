@@ -7,11 +7,11 @@ import pg8000
 def get_db_connection():
     try:
         conn = pg8000.connect(
-            host="database-1.c5qcwckke9ox.ap-south-1.rds.amazonaws.com",
+            host="miniproject.cx26osm4wxvi.ap-south-1.rds.amazonaws.com",
             port=5432,
             database="postgres",
             user="postgres",
-            password="root1234"
+            password="Sankar2706"
         )
         return conn
     except Exception as e:
